@@ -7,7 +7,11 @@ public class QueueMain {
         q.enqueue(30);
         q.enqueue(70);
 
-        q.print();
+      while (!q.isEmpty()){
+          System.out.println();
+          q.dequeue();
+      }
+      
 
     }
 }

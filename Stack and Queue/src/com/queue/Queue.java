@@ -18,6 +18,19 @@ public class Queue {
         tail=newNode;
     }
 
+    public int dequeue(){
+        if (isEmpty()){
+            System.out.println("Empty");
+        }
+        int front =head.number;
+        if (head==tail){
+            tail=null;
+        }
+        head=head.next;
+        return front;
+    }
+
+
     public void print(){
         if (isEmpty()){
             System.out.println("Empty");
